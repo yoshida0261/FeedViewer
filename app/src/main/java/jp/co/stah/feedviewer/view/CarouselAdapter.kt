@@ -31,6 +31,7 @@ class CarouselAdapter(val dataList: List<CarouselListData>) :
         holder.binding.container.setOnClickListener {
             listener.onClick(it, position, data)
         }
+
     }
 
 
