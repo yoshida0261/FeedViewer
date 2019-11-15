@@ -22,6 +22,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    dataBinding {
+        enabled = true
+    }
 }
 
 dependencies {
@@ -45,4 +48,7 @@ dependencies {
     kapt 'se.ansman.kotshi:compiler:2.0.1'
 
     implementation "io.reactivex.rxjava3:rxjava:3.0.0-RC4"
+
+
+    implementation "androidx.cardview:cardview:1.0.0"
 }
